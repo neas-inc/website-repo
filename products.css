@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #dddddd 0%, #dddddd 15%, #ffffff 15%, #ffffff 100%);
+}
+
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner.jpg');
+    width: 100%;
+    height: 35vh;
+}
+
+a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #706d6d;
+}
+
+.a1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #7a7070;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  figcaption
+  {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+  }
+
+  .figcaptionbold
+  {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+
+  :root {
+    --colortriangle: #10447967;
+    --white: #ffffff;
+  }
+  .image-container {
+    position: relative;
+    height: 80vh;
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 57, 148, 0.5);
+    z-index: 1;
+  }
+
+  .image-element {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .triangle-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 20vh 0;
+    border-color: transparent transparent var(--colortriangle) transparent;
+    z-index: 2;
+  }
+
+
+  .triangle-shape1 {
+    position: absolute;
+    bottom: 0;
+    right: 0; /* Align to the right */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 20vh 100vw; /* Change border-width values */
+    border-color: transparent transparent var(--colortriangle) transparent;
+    z-index: 2;
+  }
+
+ 
+
+  .button-container {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+  }
+
+
+  .shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn {
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+  }
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
+
+
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+    box-shadow: -2px 3px 20px #a4a2a2;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+
+  
+   .mobile-nav{
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  @media (max-width: 1200px) {
+    .intro-text-para
+    {
+      text-align: center; font-size:18px; font-weight: 500; color: #0c1b50; padding-inline: 12vh; margin-bottom: 5vh;
+    }
+  
+    .navmenu
+    {
+     display: none;
+    }
+    
+    .hamburger{
+      display: block;
+      width: 35px;
+      cursor:pointer;
+      appearance: none;
+      background: none;
+      border: none;
+    }
+  
+    .hamburger .bar, .hamburger::after, .hamburger::before{
+      content:'';
+      display: block;
+      border-radius: 4px;
+      width: 100%;
+      height: 5px;
+      background-color: #706d6d;
+      margin: 6px 0px;
+      transition: 0.4s;
+    }
+  
+    .hamburger.is-active::before
+    {
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .hamburger.is-active::after
+    {
+      transform: rotate(45deg) translate(-9px, -7px);
+    }
+  
+    .hamburger.is-active .bar
+    {
+      opacity: 0;
+    }
+  
+    .mobile-nav
+    {
+      position: fixed;
+      top:-100%;
+      left:0;
+      opacity: 0;
+      display: block;
+      width: 100%;
+      min-height: 100vh;
+      z-index: 998;
+      padding-top: 150px;
+      color: white;
+      background-color: #104579b8;
+      transition: 0.9s;
+      transition-timing-function: cubic-bezier(.04,.76,.46,1.12);
+    }
+  
+    .mobile-nav.is-active1{
+      top:0;
+      opacity:1;
+    }
+  
+
+  
+  }
