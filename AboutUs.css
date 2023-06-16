@@ -131,5 +131,12 @@ h4 {
     margin-inline: 20px;
     width: 40vh;
   }
+  .employee-section{
+    width: 90%;
+  }
 
+}
+
+.employee-section{
+  width: 80%;
 }
