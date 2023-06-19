@@ -267,3 +267,55 @@ h4 {
     #2b3557
 );  transform: rotate(10deg);
 }
+
+:root {
+  --colortriangle: #10447967;
+  --white: #ffffff;
+}
+.image-container {
+  position: relative;
+  height: 80vh;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 57, 148, 0.5);
+  z-index: 1;
+}
+
+.image-element {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.triangle-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100vw 20vh 0;
+  border-color: transparent transparent var(--colortriangle) transparent;
+  z-index: 2;
+}
+
+
+.triangle-shape1 {
+  position: absolute;
+  bottom: 0;
+  right: 0; /* Align to the right */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 20vh 100vw; /* Change border-width values */
+  border-color: transparent transparent var(--colortriangle) transparent;
+  z-index: 2;
+}
