@@ -4,11 +4,11 @@ body {
   background: linear-gradient(to right, #dddddd 0%, #dddddd 15%, #ffffff 15%, #ffffff 100%);
 }
 
-
 a {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  color: #706d6d;
+  color: #000;
+  font-size: larger;
 }
 
 .a1 {

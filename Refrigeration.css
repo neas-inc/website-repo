@@ -60,7 +60,8 @@ box-shadow: 0 10px 30px #706d6d;
 a {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  color: #706d6d;
+  color: #000;
+  font-size: larger;
 }
 
 .a1 {

@@ -1,8 +1,9 @@
 a {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    color: #979191;
-  }
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #000;
+  font-size: larger;
+}
 
 .a1 {
     font-family: 'Inter', sans-serif;
@@ -132,7 +133,20 @@ h4 {
     width: 40vh;
   }
   .employee-section{
-    width: 90%;
+    width: 95%;
+    margin-inline: 10px;
+  }
+  .employee-section a {
+    font-size: 12px;
+  }
+  .employee-section .a1
+  {
+    font-size: 14px;
+  }
+
+  .employee-section h1
+  {
+    font-size: 35px;
   }
 
 }
