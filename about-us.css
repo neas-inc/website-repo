@@ -1,0 +1,156 @@
+a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #000;
+  font-size: larger;
+}
+
+.a1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #7a7070;
+  }
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }
+
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #f7f7f7;
+  }
+
+  figcaption
+  {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+  }
+
+  .figcaptionbold
+  {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+
+
+ 
+
+  
+.mobile-nav{
+  display: none;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .intro-text-para
+  {
+    text-align: center; font-size:18px; font-weight: 500; color: #0c1b50; padding-inline: 12vh; margin-bottom: 5vh;
+  }
+
+  .navmenu
+  {
+   display: none;
+  }
+  
+  .hamburger{
+    display: block;
+    width: 35px;
+    cursor:pointer;
+    appearance: none;
+    background: none;
+    border: none;
+  }
+
+  .hamburger .bar, .hamburger::after, .hamburger::before{
+    content:'';
+    display: block;
+    border-radius: 4px;
+    width: 100%;
+    height: 5px;
+    background-color: #706d6d;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .hamburger.is-active::before
+  {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  .hamburger.is-active::after
+  {
+    transform: rotate(45deg) translate(-9px, -7px);
+  }
+
+  .hamburger.is-active .bar
+  {
+    opacity: 0;
+  }
+
+  .mobile-nav
+  {
+    position: fixed;
+    top:-100%;
+    left:0;
+    opacity: 0;
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 998;
+    padding-top: 150px;
+    color: white;
+    background-color: #104579b8;
+    transition: 0.9s;
+    transition-timing-function: cubic-bezier(.04,.76,.46,1.12);
+  }
+
+  .mobile-nav.is-active1{
+    top:0;
+    opacity:1;
+  }
+
+  .card
+  {
+    margin-inline: 20px;
+    width: 40vh;
+  }
+  .employee-section{
+    width: 95%;
+    margin-inline: 10px;
+  }
+  .employee-section a {
+    font-size: 12px;
+  }
+  .employee-section .a1
+  {
+    font-size: 14px;
+  }
+
+  .employee-section h1
+  {
+    font-size: 35px;
+  }
+
+}
+
+.employee-section{
+  width: 80%;
+}
